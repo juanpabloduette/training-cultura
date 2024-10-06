@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+}
+
+.contenido{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../img/portada.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 70vh;
+    width: 100%;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  padding: 0 50px 0 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.2s;
+}
+
+.abajo{
+    background-color: black;
+    transition: 0.2s;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+     padding: 0 40px;
+}
+
+.logo img{
+
+    max-width: 70px;
+    width: 100%;
+
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 17px;
+    margin: 0 10px;
+    line-height: 80px;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    color:#CE2B2B;
+    transition: 0.2s;
+}
+
+.nav-toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none; 
+    cursor: pointer;   
+}
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    padding-top: 170px;
+}
+
+.portada h1{
+    letter-spacing: -6px;
+    font-size: 95px;
+    color: white;
+    line-height: 75%;
+}
+
+.portada p{
+    font-size: 77px;
+    color: rgb(0, 0, 0);
+    line-height: 78%;
+    letter-spacing: -6px;
+    text-shadow: 0 0 30px #fff;
+    padding-top: 30px;
+}
+
+
+.filosofia{
+    width: 60%;
+    margin: auto;
+    background-color: #CE2B2B;
+    color: white;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    padding: 10px;
+    letter-spacing: -3px;
+    margin-top: 60px;
+}
+
+.clases{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+
+.clasestitular{
+    
+        width: 60%;
+        max-width: 600px;
+        margin: auto;
+        background-color: #CE2B2B;
+        color: white;
+        text-align: center;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 30px;
+        font-style: italic;
+        padding: 10px;
+        letter-spacing: -3px;
+        margin-top: 0px;
+    
+
+}
+.rutinas{
+    color: white;
+    padding: 20px;
+    max-width: 450px;
+}
+
+.rutinas h3{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 45px;
+    line-height: 77%;
+    letter-spacing: -4px;
+    padding-bottom: 20px;
+}
+
+.sinlimites{
+    color: white;
+    font-size: 65px;
+    font-family: 'Archivo Black', sans-serif;
+    line-height: 75%;
+    letter-spacing: -4px;
+    padding: 10px;
+}
+
+.sinlimites span{
+    color:#CE2B2B;
+}
+
+.caja-parrafos{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.parrafos{
+    color: white;
+    width: 25%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.parrafos h3{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 25px;
+    letter-spacing: -2px;
+}
+
+.parrafos p{
+    padding: 20px 10px 20px 10px;
+}
+
+.parrafos img{
+    width: 172px;
+    height: 160px;
+}
+
+
+.section3{
+    color: white;
+}
+
+.cajaprecios{
+    background-color: #CE2B2B;
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    letter-spacing: -2px;
+    padding: 10px 5px 10px 5px;
+}
+
+.individual{
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 25px;
+    letter-spacing: -2px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.caja-sesionesindividual{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.caja-sesion{
+   width: 32%;
+   border: 3px solid #CE2B2B;
+   padding: 20px;
+   text-align: center;
+}
+
+.caja-sesion h3{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    letter-spacing: -2px;
+}
+
+.caja-sesion h4{
+    color:#CE2B2B;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+
+.caja-sesion ul{
+    list-style-type: none;
+}
+.caja-sesion li{
+    padding: 5px;
+}
+
+.gratuita{
+    background-color: #00C853;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.caja-sesion a{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 250px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.caja-sesion i{
+    color:#00C853;
+    padding-right: 5px;
+}
+
+.personas{
+    margin-top: 20px;
+}
+
+.contenedorcajadeados{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cajadeados{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.cajadeados h3{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    letter-spacing: -2px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.caja-grupales{
+    width: 375px;
+    border: 3px solid #CE2B2B;
+    padding: 20px 0;
+    text-align: center;
+}
+ 
+.caja-grupales h3{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 33px;
+    letter-spacing: -2px;
+}
+ 
+.caja-grupales h4{
+    color:#CE2B2B;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50px;
+    letter-spacing: -2px;
+}
+ 
+.caja-grupales ul{
+    list-style-type: none;
+}
+.caja-grupales li{
+    padding: 5px;
+}
+ 
+.gratuita{
+    background-color: #00C853;
+    padding: 10px;
+    margin-top: 10px;
+}
+ 
+.caja-grupales a{
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 220px;
+    margin: auto;
+    margin-top: 5px;
+}
+ 
+.caja-grupales i{
+    color:#00C853;
+    padding-right: 5px;
+}
+
+.section4{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../img/ejercicios.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    width: 100%;
+}
+
+.section4 p{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 70px;
+    letter-spacing: -2px;
+    color: white;
+    padding: 200px 0 200px 0;
+    line-height: 75%;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section5{
+    background-color: #f8f8f8;
+}
+
+.localizacion{
+    background-color: #CE2B2B;
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    letter-spacing: -2px;
+}
+
+.encontramos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encontramos .quieras{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 45px;
+    letter-spacing: -4px;
+    padding: 20px;
+}
+
+.caba{
+    font-weight: bold;
+    padding: 5px;
+}
+
+.conoceme{
+
+    background-color: #CE2B2B;
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    font-style: italic;
+    font-size: 25px;
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    letter-spacing: -2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.profesor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.esteban{
+    width: 40%;
+    padding: 30px;
+}
+.profesor h3{
+    font-family: 'Archivo Black', sans-serif; 
+    font-size: 45px;
+    letter-spacing: -4px;
+}
+
+.profesor img{
+    max-width: 500px;
+}
+
+.section6{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../img/gratuita.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.section6 h2{
+    font-family: 'Archivo Black', sans-serif; 
+    font-size: 100px;
+    letter-spacing: -4px;
+    color: white;
+    text-align: center;
+    line-height: 90%;
+}
+
+.section6 p{
+    font-family: 'Archivo Black', sans-serif; 
+    font-size: 30px;
+    letter-spacing: -4px;
+    color: white;
+    background-color: #CE2B2B;
+    padding: 10px 160px 10px 160px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.section7{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section7 p{
+    padding: 10px;
+}
+
+.section7 a{
+    font-size: 13px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.section7 a:hover{
+   
+    text-decoration: underline;
+}
+
+.aceptas{
+    font-family: 'Archivo Black', sans-serif; 
+    font-size: 50px;
+    letter-spacing: -4px;
+    color: white;
+    text-align: center;
+    line-height: 75%;
+    margin-top: 20px;
+}
+
+.telefono{
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif; 
+    letter-spacing: -4px;
+}
+
+.email{
+    font-size: 30px;
+}
+
+.section7 .contactanos{
+    font-family: 'Archivo Black', sans-serif; 
+    font-size: 30px;
+    letter-spacing: -4px;
+    background-color: #f8f8f8;
+    color:black;
+    padding: 10px 50px 10px 50px;
+}
+
+.copyright{
+    margin-top: 20px;
+}
+
+/** BOTON ARRIBA **/
+.button-up {
+    position: relative;
+    z-index: 40;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+    background-color: #CE2B2B;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+  
+.button-up:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+/** BOTON WHATSAPP **/
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 63px;
+    bottom: 20px;
+    left: 20px;
+    background: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+  
+.btn-wsp:hover {
+    background: #20ba5a;
+}
+ 
+@media screen and (max-width: 785px) {
+   
+.header{
+    height: 60px;
+}
+    
+.logo{
+    font-size: 25px;
+    padding: 0;
+    line-height: 60px;
+}
+    .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100% - 60%);
+    overflow-y: auto;
+    left: 100%;
+    transition: left 0.3s;
+}
+    
+.nav-menu-item{
+    line-height: 70px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active{
+    background: none;
+    color: brown;
+}
+    
+.nav-toggle{
+    display: block;
+    padding: 0; 
+}
+  
+.nav-menu_visible{
+    left:0;
+}
+
+.portada h1{
+    font-size: 60px;
+    line-height: 75%;
+    padding-top: 100px;
+}
+    
+.portada p{
+    font-size: 50px;
+    line-height: 78%;
+    padding-top: 30px;
+}
+
+.clases{
+    flex-direction: column;
+    padding: 60px 20px;
+}
+
+.rutinas{
+    padding: 10px;
+    max-width: 100%;
+    padding-bottom: 60px;
+}
+
+.rutinas h3,
+.rutinas p{
+    text-align: center;
+}
+
+.sinlimites{
+    text-align: center;
+}
+
+.caja-parrafos{
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.parrafos{
+    width: 95%;
+}
+    
+.filosofia{ /**VER ANTES DE TERMINAR**/
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+  
+.caja-sesionesindividual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+    
+.caja-sesion{
+    width: 90%;
+    margin-bottom: 20px;
+}
+.contenedorcajadeados{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-grupales{
+    width: 90%;
+    padding: 10px;
+    margin: auto;
+}
+
+.caja-grupales h4{
+    font-size: 30px;
+}
+    
+.section4 p{
+    font-size: 40px;
+    width: 90%;
+}
+
+.conoceme,
+.localizacion{
+    width: 95%;
+}
+
+.profesor{
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.profesor img{
+
+    width: 100%;
+
+}
+.esteban{
+    width: 100%;
+    padding: 30px;
+}
+
+.section6 h2{
+    font-size: 50px;
+}
+
+.section6 p{
+    padding: 10px;
+    width: 90%;
+    text-align: center;
+}
+.email{
+    font-size: 20px;
+}
+
+
+}
